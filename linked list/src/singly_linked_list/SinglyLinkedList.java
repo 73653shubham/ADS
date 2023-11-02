@@ -61,12 +61,14 @@ public class SinglyLinkedList {
 	}
 
 	public void display() {
-		if (head == null || top==null)
+		if (head == null)
 			System.out.println("Queue is empty");
+		else {
 		Node travNode = head;
 		while (travNode.next != null) {
 			System.out.print(travNode.data + " ");
 			travNode = travNode.next;
+		}
 		}
 	}
 }
